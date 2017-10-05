@@ -12,4 +12,15 @@ public class HomeController {
 
 		return "home.index";
 	}
+	
+	@RequestMapping("echo")
+	public String echo() {
+
+		return "home.echo";
+	}
+	@RequestMapping("chat")
+	public String chat() {
+
+		return "home.chat";
+	}
 }

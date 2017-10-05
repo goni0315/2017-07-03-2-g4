@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	index page
+<a href="echo">에코</a>
+
 </body>
 </html>

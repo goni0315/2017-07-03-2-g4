@@ -9,8 +9,8 @@
     <put-attribute name="main" value="/WEB-INF/views/{1}.jsp" />
     <put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp" />
   </definition>
-    
-    <definition name="customer.*.*" template="/WEB-INF/views/inc/sub-layout.jsp">
+     
+    <definition name="customer.*.*" template="/WEB-INF/views/customer/inc/sub-layout.jsp">
     <put-attribute name="header" value="/WEB-INF/views/inc/header.jsp" />
     <put-attribute name="visual" value="/WEB-INF/views/customer/inc/visual.jsp" />
     <put-attribute name="aside" value="/WEB-INF/views/customer/inc/aside.jsp" />
@@ -18,7 +18,7 @@
     <put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp" />
   </definition> 
    
-    <definition name="admin.*.*.*" template="/WEB-INF/views/inc/sub-layout.jsp">
+    <definition name="admin.*.*.*" template="/WEB-INF/views/admin/inc/sub-layout.jsp">
     <put-attribute name="header" value="/WEB-INF/views/inc/header.jsp" />
     <put-attribute name="visual" value="/WEB-INF/views/admin/inc/visual.jsp" />
     <put-attribute name="aside" value="/WEB-INF/views/admin/inc/aside.jsp" />
@@ -31,7 +31,7 @@
     <put-attribute name="aside" value="/WEB-INF/views/{1}/inc/aside.jsp" />
     <put-attribute name="main" value="/WEB-INF/views/{1}/{2}.jsp" />
     <put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp" />
-  </definition>  
+  </definition>   
 </tiles-definitions>
 
 <!--  더 범용적인게 아래에 있어야함 넓은 범위-->
