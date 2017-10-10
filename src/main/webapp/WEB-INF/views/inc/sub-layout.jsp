@@ -8,13 +8,11 @@
 </head>
 <body>
 
-<tiles:insertAttribute name="header" />
-<div>
-<tiles:insertAttribute name="main"/>
-</div>
-<tiles:insertAttribute name="footer" />
-
-
+	<tiles:insertAttribute name="header" />
+	<div>
+		<tiles:insertAttribute name="main"/>
+	</div>
+	<tiles:insertAttribute name="footer" />
 
 
 </body>
