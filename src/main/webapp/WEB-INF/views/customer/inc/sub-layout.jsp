@@ -10,9 +10,9 @@
 
 <tiles:insertAttribute name="header" />
 <div>
-<tiles:insertAttribute name="visual"/>
-<tiles:insertAttribute name="aside"/>
-<tiles:insertAttribute name="main"/>
+	<tiles:insertAttribute name="visual"/>
+	<tiles:insertAttribute name="aside"/>
+	<tiles:insertAttribute name="main"/>
 </div>
 <tiles:insertAttribute name="footer" />
 
