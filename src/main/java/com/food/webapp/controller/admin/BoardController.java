@@ -49,6 +49,7 @@ public class BoardController {
 		
 		return "admin.board.notice.detail";
 	}
+	
 	@RequestMapping(value="notice/reg", method=RequestMethod.GET)
 	public String noticeReg() {
 		

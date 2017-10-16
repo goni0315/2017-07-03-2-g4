@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/* ----------------공통 css------------------- */
+.clearfix::after{
+	display: block;
+    clear: both;
+}
+/* ----------------container------------------- */
+.container{
+	margin: 0 auto;
+	width: 1200px;
+	position: relative;
+}
+
+/* ----------------header------------------- */
+#header{
+	height: 60px;
+}
+
+.head-logo{
+	float: left;
+	position: relative;
+	padding-right: 10px;
+}
+
+.gnb{
+	float: left;
+	position: relative;
+}
+
+.gnb li{
+	float: left;
+	padding-left: 10px;
+}
+
+.my-info{
+	float: right;
+}
+/* ----------------main------------------- */
+#main{
+	
+}
+
+
+/* ----------------footer------------------- */
+#footer{
+	padding-top: 65px;
+}
