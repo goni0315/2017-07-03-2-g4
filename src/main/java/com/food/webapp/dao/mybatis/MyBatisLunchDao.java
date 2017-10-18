@@ -5,17 +5,18 @@ import java.util.List;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.food.webapp.dao.NoticeDao;
+import com.food.webapp.dao.LunchDao;
+import com.food.webapp.entity.Lunch;
 import com.food.webapp.entity.NoticeView;
 
-public class MyBatisNoticeDao implements NoticeDao {
+public class MyBatisLunchDao implements LunchDao {
 	
 	@Autowired
 	private SqlSessionTemplate sqlSession;
 
 	@Override
 	public List<NoticeView> getList(int page,String field, String query) {
-		NoticeDao notieDao = sqlSession.getMapper(NoticeDao.class);		
+		LunchDao notieDao = sqlSession.getMapper(LunchDao.class);		
 		List<NoticeView> list = notieDao.getList(page, field, query);
 		return list;
 	}
@@ -28,7 +29,7 @@ public class MyBatisNoticeDao implements NoticeDao {
 
 	@Override
 	public NoticeView get(String id) {
-		NoticeDao noticeDao = sqlSession.getMapper(NoticeDao.class);		
+		LunchDao noticeDao = sqlSession.getMapper(LunchDao.class);		
 		NoticeView noticeView = noticeDao.get(id);
 		return noticeView;
 	}
@@ -41,7 +42,7 @@ public class MyBatisNoticeDao implements NoticeDao {
 
 	@Override
 	public NoticeView getPrev(String id) {
-		NoticeDao noticeDao = sqlSession.getMapper(NoticeDao.class);		
+		LunchDao noticeDao = sqlSession.getMapper(LunchDao.class);		
 		NoticeView result = noticeDao.getPrev(id);
 		
 		
@@ -50,12 +51,24 @@ public class MyBatisNoticeDao implements NoticeDao {
 
 	@Override
 	public NoticeView getNext(String id) {
-		NoticeDao noticeDao = sqlSession.getMapper(NoticeDao.class);		
+		LunchDao noticeDao = sqlSession.getMapper(LunchDao.class);		
 		NoticeView result = noticeDao.getNext(id);
 		
 		
 		
 		return result;
+	}
+
+	@Override
+	public String getNextId() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int insert(Lunch lunch) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }

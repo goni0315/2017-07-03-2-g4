@@ -24,7 +24,8 @@
 	
 	
 	<!--  DAO 객체들-->
-	<bean class="com.food.webapp.dao.mybatis.MyBatisNoticeDao" />
+	<bean class="com.food.webapp.dao.mybatis.MyBatisLunchDao" />
+	<bean class="com.food.webapp.dao.mybatis.MyBatisLunchFileDao" />
 
 <context:annotation-config />
 </beans>

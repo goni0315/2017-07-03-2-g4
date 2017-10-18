@@ -33,7 +33,7 @@
 	position: relative;
 }
 
-.gnb li{
+.gnb-items li{
 	float: left;
 	padding-left: 10px;
 }
@@ -73,7 +73,7 @@
 	}
 	
 	.main-search{
-		z-index: 1;
+		position: relative;
 	}
 	
 	.content{
@@ -124,9 +124,10 @@
 }
 
 .poster-size2{
-	width: 360px;
-	height: 250px;
-	border-radius: 10px;
+	width: 450px;
+	height: 450px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;	
 	object-fit: cover;
 }
 

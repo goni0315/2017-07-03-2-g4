@@ -10,14 +10,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.food.webapp.dao.NoticeDao;
+import com.food.webapp.dao.LunchDao;
 
 @Controller
 @RequestMapping("/admin/board/*")
 public class BoardController {
 	
 	@Autowired
-	private NoticeDao noticeDao;
+	private LunchDao noticeDao;
 
 	@RequestMapping("notice")
 	public String notice(
