@@ -8,7 +8,6 @@ public class Member {
 	private String pwd;
 	private String name;
 	private String gender;
-	private String birthday;
 	private String phone;
 	private String email;
 	private Date regDate;
@@ -16,13 +15,12 @@ public class Member {
 	public Member() {
 	}
 
-	public Member(String id, String pwd, String name, String gender, String birthday, String phone, String email) {
+	public Member(String id, String pwd, String name, String gender, String phone, String email) {
 		super();
 		this.id = id;
 		this.pwd = pwd;
 		this.name = name;
 		this.gender = gender;
-		this.birthday = birthday;
 		this.phone = phone;
 		this.email = email;
 	}
@@ -58,14 +56,6 @@ public class Member {
 
 	public void setGender(String gender) {
 		this.gender = gender;
-	}
-
-	public String getBirthday() {
-		return birthday;
-	}
-
-	public void setBirthday(String birthday) {
-		this.birthday = birthday;
 	}
 
 	public String getPhone() {
