@@ -9,14 +9,19 @@ import com.food.webapp.entity.Lunch;
 import com.food.webapp.entity.NoticeView;
 
 public interface LunchDao {
+	
 	List<NoticeView> getList(@Param("page") int page, String field, String query);
 	int getCount();
 	
-	//@Select("select * from NoticeView where id=#{id}") //<- mybatis 사용해서 해도됨
 	NoticeView get(String id);
+	
 	int update(String id, String title, String content);
+	
 	NoticeView getPrev(String id);
+	
 	NoticeView getNext(String id);
+	
 	String getNextId();
+	
 	int insert(Lunch lunch);
 }
