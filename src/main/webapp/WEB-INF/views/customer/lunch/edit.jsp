@@ -3,32 +3,31 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 	<main>
-		<h2 class="main title">문의답변</h2>
+		<h2 class="main title">공지사항</h2>
 		
 		<div class="breadcrumb">
 			<h3 class="hidden">breadlet</h3>
 			<ul>
 				<li>home</li>
 				<li>고객센터</li>
-				<li>문의답변</li>
+				<li>공지사항</li>
 			</ul>
 		</div>
 		
 		<div class="margin-top first">
-				<h3 class="hidden">답변 내용</h3>
+				<h3 class="hidden">공지사항 내용</h3>
 				<table class="table">
 					<tbody>
 						<tr>
 							<th>제목</th>
-							<td class="text-align-left text-indent text-strong text-orange" colspan="3">${n.title}</td>
-						</tr>
+							<td class="text-align-left text-indent text-strong text-orange" colspan="3">${n.title}</td>						</tr>
 						<tr>
 							<th>작성일</th>
 							<td class="text-align-left text-indent" colspan="3"><fmt:formatDate pattern="yyyy-MM-dd" value="${n.regDate}"/>	</td>
 						</tr>
 						<tr>
 							<th>작성자</th>
-							<td>${n.writer}</td>
+							<td>${n.writerId}</td>
 							<th>조회수</th>
 							<td>${n.hit}</td>
 						</tr>
@@ -51,7 +50,7 @@
 			</div>
 			
 			<div class="margin-top text-align-center">
-				<a class="btn btn-list" href="../question">목록</a>
+				<a class="btn btn-list" href="../notice">목록</a>
 			</div>
 			
 			<div class="margin-top">
